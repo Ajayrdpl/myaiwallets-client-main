@@ -1,0 +1,93 @@
+.DashboardMain {
+    width: 100%;
+}
+
+/* .DashboardMain.admin{
+    background-image: url("../../assets/windowBg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} */
+.DashboardMain .DashboardMain-inner {
+    width: 100%;
+    display: flex;
+}
+
+.DashboardMain .DashboardMain-inner .right-container {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.DashboardMain .main-wrapper {
+    width: 100%;
+    padding: 2.5rem;
+    padding-right: 1.5rem;
+}
+
+.UserHome .income-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2%;
+    row-gap: 2rem;
+}
+
+.UserHome .income-wrapper .income-card {
+    padding: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 32%;
+}
+
+.UserHome .income-wrapper .income-card .left h5 {
+    font-family: var(--ff-dmsans);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2rem;
+    color: var(--text-secondary);
+}
+
+.UserHome .income-wrapper .income-card .left p {
+    font-family: var(--ff-dmsans);
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 5rem;
+    color: var(--text-secondary);
+    margin-top: 1rem;
+}
+
+.UserHome .income-wrapper .income-card .right {
+    width: 6rem;
+}
+
+@media screen and (max-width: 768px) {
+    .DashboardMain .main-wrapper {
+        padding: 2rem 1.6rem;
+    }
+
+    .UserHome .income-wrapper .income-card {
+      
+        width: 49%;
+    }
+
+    .UserHome .income-wrapper .income-card .left p {
+     
+        font-size: 2rem;
+        line-height: 3rem;
+        
+    }
+
+}
+
+.DashboardMain p,
+.DashboardMain h1,
+.DashboardMain h2,
+.DashboardMain h3,
+.DashboardMain h4,
+.DashboardMain h5,
+.DashboardMain h6 ,
+.DashboardMain span {
+    color: var(--text-secondary);
+}

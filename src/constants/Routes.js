@@ -1,0 +1,40 @@
+// Authentication Routes
+export const AuthRoutes = {
+  LOGIN: "/login",
+  REGISTER: "/register",
+  ADMIN_LOGIN: "/admin/login",
+};
+
+// Authenticated Routes
+export const AuthenticatedRoutes = {
+  USER_HOME: "/",
+  ADMIN_DASHBOARD: "/admin-dashboard",
+  USER_DASHBOARD: "/dashboard",
+  PROFILE: "/profile",
+  EDIT_PROFILE: "/edit-profile",
+  WITHDRAWAL_REPORT: "/withdrawal-report",
+  WITHDRAWAL_ADMIN_REPORT: "/withdrawal-admin-report",
+    FOUND_ADD: "/found-add",
+  VIDEO_TUTORIAL:"/video",
+  ALL_USERS: "/all-users",
+  ALL_INVESTMENTS: "/all-investments",
+  RAISE_TICKET_LIST: "/raise-ticket-list",
+  SELF_INCOME_HISTORY: "/self-income-history",
+  ALL_SELF_INCOME_HISTORY: "/self-incomes",
+  WITHDRAWAL_HISTORY: "/withdrawal-history",
+  INVESTMENT_HISTORY: "/investment-history",
+  REFERRAL_HISTORY: "/referral-history",
+  TEAM_A_MEMBERS: "/our-team-a-members",
+  TEAM_B_MEMBERS: "/our-team-b-members",
+  TEAM_C_MEMBERS: "/our-team-c-members",
+  LEVEL_INCOMES: "/level-incomes",
+  ALL_LEVEL_INCOMES: "/all-level-incomes",
+  WITHDRAWAL: "/withdrawal",
+  MEMBER_TOPUP: "/member-topup",
+  TOPUP_HISTORY: "/topup-history",
+  ADD_BANNER: "/add-banner",
+  SUPPORT_RAISE_TICKET: "/support-raise-ticket",
+  SUPPORT_RAISE_TICKET_HISTORY: "/support-raise-ticket-history",
+  RANK_AND_LEADERBOARD: "/rank-and-leaderboard",
+  ADD_NOTICE_UPDATES: "/add-notice-updates",
+};

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  /* font-size: 62.5%; */
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+/* @media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 50%;
+  }
+  
+} */
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --blue: #4e00b2;
+  --main-bg: #f8f8fa;
+  --primary-black: #101616;
+  --main-purple: #573113;
+  --text-primary: #1a2638;
+  --text-primary2: #0d0d0d;
+  --text-secondary: #aeabab;
+  --text-light-primary: #8d9eb5;
+  --text-light-primary2: #61748f;
+  --ff-nato: "Noto Sans", sans-serif;
+}
+
+
+[data-bs-theme=blue-theme] body {
+  --bs-heading-color: #e6ecf0;
+  --bs-body-color: #d3d7dc;
+  --bs-body-bg: #3d130048;
+  --bs-body-bg-2: #181f4a;
+  --bs-transparent-bg: rgba(255, 255, 255, 0.10);
+  --bs-border-color-translucent: rgba(226, 232, 240, 0.15);
+  --bs-border-color: rgba(255, 255, 255, 0.15);
+  --sticky-header-bg: rgba(255, 255, 255, 0.45);
+  --bs-disabled-bg: #4b5481;
+  --bs-tertiary-bg: #181f4a;
+  --bs-card-bg: #070c29;
+
+  background-image: url(/src/assets/theme/preview.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* color: var(--bs-body-color); */
+  /* color: rgb(105 102 135 / var(--tw-text-opacity, 1)); */
+  color: var(--text-primary);
+  background-color: var(--bs-body-bg-2);
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bcc5ff; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 10s steps(30) infinite, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 100%;
+  }
+  50% {
+    width: 0;
+  }
+  75% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}

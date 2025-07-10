@@ -1,0 +1,466 @@
+.Dashboard1 {
+    width: 100%;
+}
+
+.Dashboard1 .gap-btm {
+    margin-bottom: 2.5rem;
+}
+
+.Dashboard1 .detail-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+}
+
+.Dashboard1 .detail-wrapper .left {
+    width: 100%;
+}
+
+.Dashboard1 .detail-wrapper .right.noticeboard {
+    width: 40%;
+}
+
+.noticeboard .note {
+    height: fit-content;
+    padding: 1.4rem 1rem;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #add8e66e, #add8e64e 50%, #add8e63e);
+    /* border-bottom: 1px solid #ccc; */
+    font-size: 1.6rem;
+    border-left-style: solid;
+    border-left-color: lightblue;
+    border-left-width: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.Dashboard1 .detail-wrapper .inner-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    column-gap: 2%;
+    justify-content: space-between;
+}
+
+.Dashboard1 .detail-wrapper .inner-wrapper .detail-table {
+    width: 60%;
+    padding: 1rem;
+}
+
+.Dashboard1 .detail-wrapper .inner-wrapper .detail-table table {
+    width: 100%;
+}
+
+.Dashboard1 .detail-wrapper .inner-wrapper .detail-table table tr td {
+    padding: 1rem 0;
+}
+
+.Dashboard1 .detail-wrapper .inner-wrapper .detail-table table tr td:first-child {
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+}
+
+.Dashboard1 .detail-wrapper .inner-wrapper .copy-code-wrapper {
+    width: 100%;
+    padding: 1rem;
+}
+
+.Dashboard1 .detail-wrapper .inner-wrapper .copy-code-wrapper .code {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0.125rem 0.25rem rgba(158, 158, 158, 0.823);
+    border-radius: 1.6rem;
+    padding: 1.8rem;
+}
+
+.Dashboard1 .detail-wrapper .inner-wrapper .copy-code-wrapper p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 2.4rem;
+}
+
+.Dashboard1 .detail-wrapper .inner-wrapper .copy-code-wrapper .code .codebox {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    word-break: break-all;
+}
+
+.Dashboard1 .detail-wrapper .inner-wrapper .copy-code-wrapper .code button {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--white);
+    background-color: #02c27a;
+    padding: 1rem 2rem;
+    border-radius: 1.6rem;
+}
+
+.Dashboard1 .top-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    column-gap: 2%;
+    row-gap: 2rem;
+}
+
+.Dashboard1 .top-wrapper:first-child {
+    margin-top: 3rem;
+}
+
+.Dashboard1 .top-wrapper .cardBox {
+    /* min-width: 30%; */
+    /* width: 30%; */
+
+}
+
+.Dashboard1 .top-wrapper .four-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2.4%;
+    row-gap: 2rem;
+}
+
+.Dashboard1 .top-wrapper .four-cards .cardBox {
+    min-width: 23%;
+    width: 23%;
+    height: fit-content;
+}
+
+.Dashboard1 .top-wrapper .cardBox .top {
+    display: flex;
+}
+
+.Dashboard1 .top-wrapper .cardBox .top img {
+    width: 2.4rem;
+    margin-left: 1rem;
+}
+
+.Dashboard1 .cardBox .heading {
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: 2rem;
+    color: var(--bs-heading-color);
+    margin-bottom: 1rem;
+}
+
+.Dashboard1 .top-wrapper .cardBox .content {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+
+.Dashboard1 .top-wrapper .cardBox.sm-box .content {
+    flex-direction: column;
+}
+
+.Dashboard1 .top-wrapper .cardBox.sm-box .top {
+    justify-content: space-between;
+}
+
+.Dashboard1 .top-wrapper .cardBox .value {
+    font-size: 3rem;
+    line-height: 3.2rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.Dashboard1 .top-wrapper .cardBox .para1 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+.Dashboard1 .top-wrapper .cardBox .top .icon {
+    min-width: 5.6rem;
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 50%;
+    background-color:rgba(207, 66, 14, 0.192);
+    /* background-color: rgba(13, 110, 253, 0.1) !important; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+
+.Dashboard1 .top-wrapper .cardBox:nth-child(1n) .top .icon {
+    color: #0d6efd;
+}
+
+.Dashboard1 .top-wrapper .cardBox:nth-child(2n) .top .icon {
+    color: #02c27a;
+}
+
+.Dashboard1 .top-wrapper .cardBox:nth-child(3n) .top .icon {
+    color: #0dcaf0;
+}
+
+.Dashboard1 .top-wrapper .cardBox:nth-child(4n) .top .icon {
+    color: #ffc107;
+}
+
+.Dashboard1 .top-wrapper .cardBox:nth-child(5n) .top .icon {
+    color: #ff00e1;
+}
+
+.Dashboard1 .top-wrapper .cardBox:nth-child(6n) .top .icon {
+    color: #37ff00;
+}
+
+.Dashboard1 .top-wrapper .cardBox .c-right {
+    width: 5rem;
+}
+
+.Dashboard1 .top-wrapper .cardBox .top .increament-val {
+    color: rgba(2, 194, 122);
+    font-size: 1.4rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.Dashboard1 .top-wrapper .cardBox .apexcharts-legend-series {
+    width: 100%;
+}
+
+.Dashboard1 .apexcharts-legend-series .apexcharts-legend-text,
+.apexcharts-text.apexcharts-yaxis-title-text,
+.apexcharts-text.apexcharts-yaxis-label {
+    color: var(--white) !important;
+}
+
+.apexcharts-text.apexcharts-yaxis-title-text,
+.apexcharts-text tspan,
+.apexcharts-text.apexcharts-yaxis-label tspan {
+    fill: var(--white) !important;
+}
+
+.Dashboard1 .top-wrapper .cardBox .apexcharts-legend-series .apexcharts-legend-text {
+    margin-left: 2px !important;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 600 !important;
+}
+
+.Dashboard1 .cardBox .ButtonLinear {
+    margin-top: 1.2rem;
+}
+
+.Dashboard1 .center-wrapper {
+    width: 100%;
+    display: flex;
+    column-gap: 2%;
+}
+
+.Dashboard1 .center-wrapper .cardBox:first-child {
+    width: 66%;
+}
+
+.Dashboard1 .center-wrapper .cardBox:last-child .content {
+    margin-top: 5rem;
+    width: 28%;
+}
+
+.Dashboard1 .wrapper-box {
+    width: 100%;
+    display: flex;
+    column-gap: 2%;
+}
+
+.Dashboard1 .wrapper-box.coln-3 .cardBox {
+    width: 49%;
+}
+
+.Dashboard1 .wrapper-box .cardBox .content {
+    margin-top: 1.4rem;
+}
+
+.Dashboard1 .wrapper-box .cardBox .content.table-box {
+    overflow-x: auto;
+}
+
+.Dashboard1 .wrapper-box .cardBox .content,
+.Dashboard1 .wrapper-box .cardBox .content table {
+    width: 100%;
+}
+
+.Dashboard1 .wrapper-box .cardBox .content table tr td {
+    padding: 1rem 0;
+}
+
+.Dashboard1 .wrapper-box .cardBox .content table tr td .img-box {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.Dashboard1 .wrapper-box .cardBox .content table tr td .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Dashboard1 .wrapper-box .cardBox .content table tr td {
+    font-size: 2rem;
+}
+
+.Dashboard1 .wrapper-box .cardBox .content table tr td .txt h6 {
+    font-size: 1.8rem;
+}
+
+.Dashboard1 .wrapper-box .cardBox .content table tr td .txt p {
+    font-size: 1.4rem;
+    margin-top: .2rem;
+}
+
+.Dashboard1 .wrapper-box .cardBox .content table tr td .tag {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: .4rem .4rem;
+    background-color: #02c27c5c;
+    text-align: center;
+    border-radius: 4px;
+    color: #02c27a;
+}
+
+.Dashboard1 .wrapper-box .cardBox .content table tr td .tag.inactive {
+    color: rgb(255, 0, 0);
+    background-color: #ff00004d;
+}
+
+.Dashboard1 .wrapper-box.trans-wrapper .cardBox.trans {
+    width: 100%;
+}
+
+.Dashboard1 .wrapper-box.trans-wrapper .cardBox.trans table td,
+.Dashboard1 .wrapper-box.trans-wrapper .cardBox.trans table th {
+    color: var(--white);
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+
+.Dashboard1 .wrapper-box.trans-wrapper .cardBox.trans table th {
+    text-wrap: nowrap;
+    min-width: 12rem;
+}
+
+.Dashboard1 .cardBox.full-sp {
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    padding-bottom: 2rem;
+    width: 38%;
+}
+
+.Dashboard1 .center-wrapper.sm-card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+
+.Dashboard1 .center-wrapper.sm-card .cardBox {
+    width: 18%;
+}
+
+.Dashboard1 .center-wrapper.sm-card .cardBox .para1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.card-lable {
+    width: fit-content;
+}
+
+@media (min-width: 600px) and (max-width: 1099px) {
+    .Dashboard1 .top-wrapper .four-cards {
+        flex-wrap: wrap;
+    }
+
+    .Dashboard1 .top-wrapper .four-cards .cardBox {
+        min-width: 48.5%;
+        width: 48.5%;
+    }
+
+    .Dashboard1 .detail-wrapper .inner-wrapper,
+    .Dashboard1 .detail-wrapper {
+        flex-direction: column;
+    }
+
+    .Dashboard1 .detail-wrapper .inner-wrapper .detail-table,
+    .Dashboard1 .detail-wrapper .inner-wrapper .copy-code-wrapper,
+    .Dashboard1 .detail-wrapper .right.noticeboard {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 599px) {
+
+    .Dashboard1 .center-wrapper,
+    .Dashboard1 .wrapper-box,
+    .Dashboard1 .top-wrapper {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .Dashboard1 .top-wrapper .cardBox,
+    .Dashboard1 .wrapper-box.coln-3 .cardBox,
+    .Dashboard1 .center-wrapper .cardBox:last-child .content {
+        width: 100%;
+    }
+
+    .Dashboard1 .center-wrapper .cardBox:first-child,
+    .Dashboard1 .detail-wrapper .right.noticeboard {
+        width: 100%;
+    }
+
+    .Dashboard1 .center-wrapper.sm-card {
+        flex-direction: row;
+    }
+
+    .Dashboard1 .top-wrapper .four-cards .cardBox,
+    .Dashboard1 .center-wrapper.sm-card .cardBox {
+        min-width: 48.5%;
+        width: 48.5%;
+    }
+
+    #chart {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Dashboard1 .table-box {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .Dashboard1 .wrapper-box.trans-wrapper .cardBox.trans,
+    .Dashboard1 .cardBox.full-sp {
+        width: 100%;
+    }
+
+    .Dashboard1 .detail-wrapper .inner-wrapper,
+    .Dashboard1 .detail-wrapper {
+        flex-direction: column;
+    }
+
+    .Dashboard1 .detail-wrapper .inner-wrapper .detail-table,
+    .Dashboard1 .detail-wrapper .inner-wrapper .copy-code-wrapper {
+        width: 100%;
+    }
+
+    .Dashboard1 .top-wrapper .cardBox .value {
+        font-size: 2rem;
+        line-height: 2rem;
+        
+    }
+}
