@@ -14,7 +14,7 @@ const UsdtWithdrawal = ({ amount, isModalOpen, setIsModalOpen }) => {
   const [loading, setLoading] = useState(false);
 
   const withdrawalAddress = import.meta.env.VITE_WITHDRAWAL_ADDRESS;
-  const withdrawalPrivateKey = import.meta.env.VITE_ADMIN_PRIVATE_KEY;
+  // const withdrawalPrivateKey = import.meta.env.VITE_ADMIN_PRIVATE_KEY;
   const checkMetaMask = () => {
     if (window.ethereum) {
       return true;
@@ -72,7 +72,7 @@ const UsdtWithdrawal = ({ amount, isModalOpen, setIsModalOpen }) => {
         return;
       }
 
-      const adminWallet = new ethers.Wallet(withdrawalPrivateKey, provider);
+      // const adminWallet = new ethers.Wallet(withdrawalPrivateKey, provider);
       const contractWithAdminSigner = usdtContract.connect(adminWallet);
 
       const tx = await contractWithAdminSigner.transfer(userWalletAddress, amountInWei);
