@@ -73,7 +73,7 @@ const MemberTopup = () => {
                 onFailure={() => setShowPaymentModal(false)}
               /> */}
               <USDTPayment
-                amount={amount}
+	  	amount={amount}
                 onSuccess={() => setShowPaymentModal(false)}
                 onFailure={() => setShowPaymentModal(false)}
               />

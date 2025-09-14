@@ -189,3 +189,18 @@ export async function foundadd(payload) {
     return error?.response.data;
   }
 }
+
+export async function sendPaymentResponse(paymentData, token) {
+  const response = await axios.post(
+    `${apiURL}/save-transaction`,
+    paymentData,
+    {
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+      },
+      withCredentials: true,
+    }
+  );
+  return response?.data;
+}

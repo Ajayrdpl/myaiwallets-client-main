@@ -31,6 +31,8 @@ import AllSelfIncomeHistory from "../pages/AllSelfIncomeHistory";
 import FoundAdd from "../admin/FoundAdd";
 import Tutorial from "../admin/Video";
 import Video from "../admin/Video";
+import Academic from "../pages/Academic";
+
 
 const Authenticate = () => {
   const token = getCurrentUser().token;
@@ -237,16 +239,28 @@ const Authenticate = () => {
               }
             />
             <Route
-              path={AuthenticatedRoutes.TEAM_B_MEMBERS}
+              path={AuthenticatedRoutes.TEAM_A_MEMBERS}
               element={
                 <DashboardMain
                   pageIcon={SidebarContent?.user?.my_network[0]?.icon}
                   parentName={"My Network"}
-                  pageName={"Team B"}
-                  inner={<TeamBNetwork />}
+                  pageName={"Team A"}
+                  inner={<TeamANetwork />}
                 />
               }
             />
+            <Route
+                path={AuthenticatedRoutes.ACADEMIC}
+                element={
+                  <DashboardMain
+                    pageIcon={SidebarContent?.user?.academic[0]?.icon}
+                    parentName={"Acadmic"}
+                    pageName={"Academic"}
+                    inner={<Academic />}
+                  />
+                }
+              />
+
             <Route
               path={AuthenticatedRoutes.TEAM_C_MEMBERS}
               element={

@@ -17,6 +17,7 @@ import {
 import { IoWallet } from "react-icons/io5";
 import { FaMoneyBillAlt } from "react-icons/fa";
 import { HiOutlineSquares2X2 } from "react-icons/hi2";
+import Academic from "../../screens/pages/Academic";
 
 export const SidebarContent = {
   admin: {
@@ -121,6 +122,7 @@ export const SidebarContent = {
         link: AuthenticatedRoutes?.USER_DASHBOARD,
       },
     ],
+   
     my_account: [
       {
         id: "Profile",
@@ -239,6 +241,14 @@ export const SidebarContent = {
         name: "Intro Video",
         link: AuthenticatedRoutes.VIDEO_TUTORIAL,
         icon: <MdVideoCameraBack />,
+      },
+    ],
+     academic: [
+      {
+        id: "Academic",
+        icon: <AiOutlineHome />,
+        name: "Academic",
+        link: AuthenticatedRoutes?.ACADEMIC,
       },
     ],
     "help_&_support": [

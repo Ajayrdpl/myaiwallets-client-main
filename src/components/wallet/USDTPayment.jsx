@@ -22,10 +22,10 @@ const USDTPayment = ({ amount, onSuccess, onFailure }) => {
   const [USDTAmount, setUSDTAmount] = useState(0);
   const [walletConnected, setWalletConnected] = useState(false);
   const [recipientAddress, setRecipientAddress] = useState(
-    import.meta.env.VITE_PAYMENT_ADDRESS
+    import.meta.env.VITE_PAYMENT_TOPUP
   );
   useEffect(() => {
-    setRecipientAddress(import.meta.env.VITE_PAYMENT_ADDRESS);
+    setRecipientAddress(import.meta.env.VITE_PAYMENT_TOPUP);
   }, []);
 
   const convertAndLog = async (amount) => {
@@ -66,7 +66,10 @@ const USDTPayment = ({ amount, onSuccess, onFailure }) => {
                       symbol: "BNB",
                       decimals: 18,
                     },
-                    rpcUrls: ["https://bsc-dataseed1.binance.org/"],
+                    rpcUrls: ["https://bsc-dataseed1.binance.org/", "https://bsc-dataseed1.binance.org/",
+  "https://bsc-dataseed2.binance.org/", 
+  "https://bsc-dataseed3.binance.org/",
+  "https://bsc-dataseed4.binance.org/"],
                     blockExplorerUrls: ["https://bscscan.com/"],
                   },
                 ],
@@ -154,24 +157,25 @@ const USDTPayment = ({ amount, onSuccess, onFailure }) => {
           USDT_ABI,
           signer
         );
-
+	let decimals=18;
         try {
-          const decimals = await usdtContract.decimals();
+          decimals = await usdtContract.decimals({ gasLimit: 100000 });
           console.log(`Token decimals: ${decimals}`);
         } catch (error) {
           console.error("Error fetching USDT decimals:", error);
-          throw new Error("Invalid USDT contract on BSC network");
-        }
+          //throw new Error("Invalid USDT contract on BSC network");
+        	decimals=18;	
+	}
 
         const balance = await usdtContract.balanceOf(userAddress);
-        const amountInUSDT = ethers.parseUnits(USDTAmount.toString(), 18);
+        const amountInUSDT = ethers.parseUnits(USDTAmount.toString(), decimals);
 
         if (balance < amountInUSDT) {
           throw new Error("Insufficient USDT balance");
         }
 
         // Send USDT directly to recipient address
-        const tx = await usdtContract.transfer(recipientAddress, amountInUSDT);
+        const tx = await usdtContract.transfer(recipientAddress, amountInUSDT,{ gasLimit: 100000 });
         await tx.wait();
         console.log("Transaction hash:", tx.hash);
         console.log(tx);

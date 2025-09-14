@@ -15,6 +15,16 @@ export async function buyPlanPackage(payload) {
   return response?.data;
 }
 
+export async function buyPlanPackageAcadamic(payload) {
+  const response = await axios.post(`${setApiURL}/user/transaction/wallet/Acadmicrequest`, payload, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+    withCredentials: true,
+  });
+  return response?.data; 
+}
+
 
 export async function checkWithdrawEligibility(payload) {
   const response = await axios.post(`${setApiURL}/user/withdrawal-amount`, payload, {
